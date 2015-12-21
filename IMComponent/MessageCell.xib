@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="MessageCell" selectionStyle="blue" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="44" id="KGk-i7-Jjw" userLabel="MessageCell" customClass="MessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="294" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75i-fq-aFR">
+                        <rect key="frame" x="60" y="5" width="67" height="38.5"/>
+                        <state key="normal" backgroundImage="ReceiverTextNodeBkgHL"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="branddefulthead" translatesAutoresizingMaskIntoConstraints="NO" id="eLW-K6-ky6">
+                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="19E-HK-zXh"/>
+                            <constraint firstAttribute="width" constant="40" id="9AF-ka-TKe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsv-PU-bI1">
+                        <rect key="frame" x="75" y="15" width="42" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jsv-PU-bI1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="4p0-pR-cIp"/>
+                    <constraint firstItem="75i-fq-aFR" firstAttribute="bottom" secondItem="Jsv-PU-bI1" secondAttribute="bottom" constant="15" id="D1K-PK-x6B"/>
+                    <constraint firstItem="75i-fq-aFR" firstAttribute="trailing" secondItem="Jsv-PU-bI1" secondAttribute="trailing" constant="10" id="Qp5-va-88f"/>
+                    <constraint firstItem="eLW-K6-ky6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="TVk-yX-mJU"/>
+                    <constraint firstItem="75i-fq-aFR" firstAttribute="leading" secondItem="Jsv-PU-bI1" secondAttribute="leading" constant="-15" id="X1r-IA-aJY"/>
+                    <constraint firstItem="eLW-K6-ky6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Xyd-fd-YsE"/>
+                    <constraint firstItem="Jsv-PU-bI1" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-10" id="ZGt-tC-ZOF"/>
+                    <constraint firstItem="Jsv-PU-bI1" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-15" id="gcN-jA-W5L"/>
+                    <constraint firstItem="75i-fq-aFR" firstAttribute="top" secondItem="Jsv-PU-bI1" secondAttribute="top" constant="-10" id="js4-1B-Wwi"/>
+                    <constraint firstItem="Jsv-PU-bI1" firstAttribute="leading" secondItem="eLW-K6-ky6" secondAttribute="trailing" constant="30" id="xz4-XG-zqr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avtorImage" destination="eLW-K6-ky6" id="Nl4-7o-OS5"/>
+                <outlet property="avtorImageView" destination="eLW-K6-ky6" id="HQV-km-OHS"/>
+                <outlet property="messagelabel" destination="Jsv-PU-bI1" id="CmF-yk-wYo"/>
+            </connections>
+            <point key="canvasLocation" x="275" y="345"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ReceiverTextNodeBkgHL" width="28" height="51"/>
+        <image name="branddefulthead" width="62" height="62"/>
+    </resources>
+</document>

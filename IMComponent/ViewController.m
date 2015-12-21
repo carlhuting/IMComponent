@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "macroDefine.h"
 
 typedef NS_ENUM(NSInteger, LTBoardState) {
     LTBoardStateDefault  = 0 ,
@@ -17,6 +18,8 @@ typedef NS_ENUM(NSInteger, LTBoardState) {
 };
 
 @interface ViewController ()
+
+
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *actionBoardHeight;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
@@ -31,6 +34,8 @@ typedef NS_ENUM(NSInteger, LTBoardState) {
 @end
 
 @implementation ViewController
+
+viewController(@"Main")
 
 - (UIView *)actionViewOne {
     if (!_actionViewOne) {
