@@ -9,7 +9,7 @@
 #import "LTMainTableViewController.h"
 #import "ViewController.h"
 #import "IMViewController.h"
-#import "LTControlViewController.h"
+#import "LTMessageViewController.h"
 
 @interface LTMainTableViewController ()
 
@@ -57,8 +57,8 @@
     } else if (indexPath.row == 1) {
         IMViewController *vc = [IMViewController viewController];
         [self.navigationController pushViewController:vc animated:YES];
-    } else if (indexPath.row == 2) {
-        LTControlViewController *vc = [LTControlViewController viewController];
+    } else {
+        LTMessageViewController *vc = [LTMessageViewController viewController];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

@@ -14,6 +14,10 @@ UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundl
 return [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([self class])];\
 }
 
-
+#ifdef DEBUG
+    #define FLOG  NSLog(@" method = %@", NSStringFromSelector(_cmd));
+#else
+    #define FLOG
+#endif
 
 #endif /* MacroDefine_h */

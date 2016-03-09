@@ -7,27 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		595397031C27D70B002FCF8B /* ActionBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595397021C27D70B002FCF8B /* ActionBarViewController.m */; };
 		59897E821BE705C600BAAFB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59897E811BE705C600BAAFB0 /* main.m */; };
 		59897E851BE705C600BAAFB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59897E841BE705C600BAAFB0 /* AppDelegate.m */; };
-		59897E881BE705C600BAAFB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59897E871BE705C600BAAFB0 /* ViewController.m */; };
 		59897E8B1BE705C600BAAFB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59897E891BE705C600BAAFB0 /* Main.storyboard */; };
 		59897E8D1BE705C600BAAFB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59897E8C1BE705C600BAAFB0 /* Assets.xcassets */; };
 		59897E901BE705C600BAAFB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59897E8E1BE705C600BAAFB0 /* LaunchScreen.storyboard */; };
 		59897E9B1BE705C600BAAFB0 /* IMComponentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59897E9A1BE705C600BAAFB0 /* IMComponentTests.m */; };
 		59897EA61BE705C600BAAFB0 /* IMComponentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59897EA51BE705C600BAAFB0 /* IMComponentUITests.m */; };
-		5991EF5E1BF20B3C00D206CE /* ActionBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5991EF5D1BF20B3C00D206CE /* ActionBoard.m */; };
-		5991EF601BF20CEF00D206CE /* ActionBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5991EF5F1BF20CEF00D206CE /* ActionBoard.xib */; };
-		59A92B8E1C2189CA000B08C9 /* IM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A92B801C2189CA000B08C9 /* IM.storyboard */; };
 		59A92B8F1C2189CA000B08C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A92B811C2189CA000B08C9 /* Images.xcassets */; };
-		59A92B901C2189CA000B08C9 /* IMInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A92B831C2189CA000B08C9 /* IMInputBar.m */; };
-		59A92B921C2189CA000B08C9 /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A92B871C2189CA000B08C9 /* IMViewController.m */; };
-		59A92B931C2189CA000B08C9 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A92B891C2189CA000B08C9 /* MessageCell.m */; };
-		59A92B941C2189CA000B08C9 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59A92B8A1C2189CA000B08C9 /* MessageCell.xib */; };
 		59A92B961C2189CA000B08C9 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A92B8D1C2189CA000B08C9 /* UITableView+FDTemplateLayoutCell.m */; };
-		59A92B9A1C22A558000B08C9 /* LTMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A92B991C22A558000B08C9 /* LTMainTableViewController.m */; };
-		59A92BA21C22AE8C000B08C9 /* LTSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A92BA11C22AE8C000B08C9 /* LTSegmentedControl.m */; };
-		59A92BA61C22D2C3000B08C9 /* LTControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A92BA51C22D2C3000B08C9 /* LTControlViewController.m */; };
+		59B806031C8EDFB30090BFDF /* ActionBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B805F81C8EDFB30090BFDF /* ActionBarViewController.m */; };
+		59B806041C8EDFB30090BFDF /* IM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B805F91C8EDFB30090BFDF /* IM.storyboard */; };
+		59B806051C8EDFB30090BFDF /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B805FB1C8EDFB30090BFDF /* IMViewController.m */; };
+		59B806061C8EDFB30090BFDF /* LTMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B805FD1C8EDFB30090BFDF /* LTMainTableViewController.m */; };
+		59B806071C8EDFB30090BFDF /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B805FF1C8EDFB30090BFDF /* MessageCell.m */; };
+		59B806081C8EDFB30090BFDF /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B806001C8EDFB30090BFDF /* MessageCell.xib */; };
+		59B806091C8EDFB30090BFDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B806021C8EDFB30090BFDF /* ViewController.m */; };
+		59B8060C1C8EE23A0090BFDF /* LTInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B8060B1C8EE23A0090BFDF /* LTInputBar.m */; };
+		59B8060F1C8EE3CC0090BFDF /* LTMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B8060E1C8EE3CC0090BFDF /* LTMessageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,46 +45,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		595397011C27D70B002FCF8B /* ActionBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionBarViewController.h; sourceTree = "<group>"; };
-		595397021C27D70B002FCF8B /* ActionBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionBarViewController.m; sourceTree = "<group>"; };
 		59897E7D1BE705C600BAAFB0 /* IMComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59897E811BE705C600BAAFB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		59897E831BE705C600BAAFB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = IMComponent/AppDelegate.h; sourceTree = "<group>"; };
-		59897E841BE705C600BAAFB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = IMComponent/AppDelegate.m; sourceTree = "<group>"; };
-		59897E861BE705C600BAAFB0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = IMComponent/ViewController.h; sourceTree = "<group>"; };
-		59897E871BE705C600BAAFB0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = IMComponent/ViewController.m; sourceTree = "<group>"; };
+		59897E831BE705C600BAAFB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		59897E841BE705C600BAAFB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		59897E8A1BE705C600BAAFB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		59897E8C1BE705C600BAAFB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = IMComponent/Assets.xcassets; sourceTree = "<group>"; };
+		59897E8C1BE705C600BAAFB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = IMComponent/Resource/Assets.xcassets; sourceTree = "<group>"; };
 		59897E8F1BE705C600BAAFB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		59897E911BE705C600BAAFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = IMComponent/Info.plist; sourceTree = "<group>"; };
+		59897E911BE705C600BAAFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59897E961BE705C600BAAFB0 /* IMComponentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMComponentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59897E9A1BE705C600BAAFB0 /* IMComponentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMComponentTests.m; sourceTree = "<group>"; };
 		59897E9C1BE705C600BAAFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59897EA11BE705C600BAAFB0 /* IMComponentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMComponentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59897EA51BE705C600BAAFB0 /* IMComponentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMComponentUITests.m; sourceTree = "<group>"; };
 		59897EA71BE705C600BAAFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5991EF5C1BF20B3C00D206CE /* ActionBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionBoard.h; path = IMComponent/ActionBoard.h; sourceTree = "<group>"; };
-		5991EF5D1BF20B3C00D206CE /* ActionBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionBoard.m; path = IMComponent/ActionBoard.m; sourceTree = "<group>"; };
-		5991EF5F1BF20CEF00D206CE /* ActionBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActionBoard.xib; path = IMComponent/ActionBoard.xib; sourceTree = "<group>"; };
-		59A92B801C2189CA000B08C9 /* IM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = IM.storyboard; path = IMComponent/IM.storyboard; sourceTree = "<group>"; };
-		59A92B811C2189CA000B08C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IMComponent/Images.xcassets; sourceTree = "<group>"; };
-		59A92B821C2189CA000B08C9 /* IMInputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMInputBar.h; path = IMComponent/IMInputBar.h; sourceTree = "<group>"; };
-		59A92B831C2189CA000B08C9 /* IMInputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMInputBar.m; path = IMComponent/IMInputBar.m; sourceTree = "<group>"; };
-		59A92B861C2189CA000B08C9 /* IMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMViewController.h; path = IMComponent/IMViewController.h; sourceTree = "<group>"; };
-		59A92B871C2189CA000B08C9 /* IMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMViewController.m; path = IMComponent/IMViewController.m; sourceTree = "<group>"; };
-		59A92B881C2189CA000B08C9 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageCell.h; path = IMComponent/MessageCell.h; sourceTree = "<group>"; };
-		59A92B891C2189CA000B08C9 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageCell.m; path = IMComponent/MessageCell.m; sourceTree = "<group>"; };
-		59A92B8A1C2189CA000B08C9 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessageCell.xib; path = IMComponent/MessageCell.xib; sourceTree = "<group>"; };
-		59A92B8C1C2189CA000B08C9 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCell.h"; path = "IMComponent/UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
-		59A92B8D1C2189CA000B08C9 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCell.m"; path = "IMComponent/UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
-		59A92B981C22A558000B08C9 /* LTMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTMainTableViewController.h; sourceTree = "<group>"; };
-		59A92B991C22A558000B08C9 /* LTMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTMainTableViewController.m; sourceTree = "<group>"; };
-		59A92B9B1C22A98E000B08C9 /* MacroDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MacroDefine.h; path = ../MacroDefine.h; sourceTree = "<group>"; };
-		59A92B9C1C22AAFC000B08C9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		59A92BA01C22AE8C000B08C9 /* LTSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSegmentedControl.h; sourceTree = "<group>"; };
-		59A92BA11C22AE8C000B08C9 /* LTSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSegmentedControl.m; sourceTree = "<group>"; };
-		59A92BA41C22D2C3000B08C9 /* LTControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTControlViewController.h; sourceTree = "<group>"; };
-		59A92BA51C22D2C3000B08C9 /* LTControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTControlViewController.m; sourceTree = "<group>"; };
+		59A92B811C2189CA000B08C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IMComponent/Resource/Images.xcassets; sourceTree = "<group>"; };
+		59A92B8C1C2189CA000B08C9 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCell.h"; path = "IMComponent/ThirdLibrary/UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		59A92B8D1C2189CA000B08C9 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCell.m"; path = "IMComponent/ThirdLibrary/UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		59B805F51C8EDF310090BFDF /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		59B805F61C8EDF420090BFDF /* MacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacroDefine.h; path = IMComponent/Support/MacroDefine.h; sourceTree = "<group>"; };
+		59B805F71C8EDFB30090BFDF /* ActionBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionBarViewController.h; path = IMComponent/App/ActionBarViewController.h; sourceTree = "<group>"; };
+		59B805F81C8EDFB30090BFDF /* ActionBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionBarViewController.m; path = IMComponent/App/ActionBarViewController.m; sourceTree = "<group>"; };
+		59B805F91C8EDFB30090BFDF /* IM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = IM.storyboard; path = IMComponent/App/IM.storyboard; sourceTree = "<group>"; };
+		59B805FA1C8EDFB30090BFDF /* IMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMViewController.h; path = IMComponent/App/IMViewController.h; sourceTree = "<group>"; };
+		59B805FB1C8EDFB30090BFDF /* IMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMViewController.m; path = IMComponent/App/IMViewController.m; sourceTree = "<group>"; };
+		59B805FC1C8EDFB30090BFDF /* LTMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTMainTableViewController.h; path = IMComponent/App/LTMainTableViewController.h; sourceTree = "<group>"; };
+		59B805FD1C8EDFB30090BFDF /* LTMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LTMainTableViewController.m; path = IMComponent/App/LTMainTableViewController.m; sourceTree = "<group>"; };
+		59B805FE1C8EDFB30090BFDF /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageCell.h; path = IMComponent/App/MessageCell.h; sourceTree = "<group>"; };
+		59B805FF1C8EDFB30090BFDF /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageCell.m; path = IMComponent/App/MessageCell.m; sourceTree = "<group>"; };
+		59B806001C8EDFB30090BFDF /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessageCell.xib; path = IMComponent/App/MessageCell.xib; sourceTree = "<group>"; };
+		59B806011C8EDFB30090BFDF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = IMComponent/App/ViewController.h; sourceTree = "<group>"; };
+		59B806021C8EDFB30090BFDF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = IMComponent/App/ViewController.m; sourceTree = "<group>"; };
+		59B8060A1C8EE23A0090BFDF /* LTInputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTInputBar.h; sourceTree = "<group>"; };
+		59B8060B1C8EE23A0090BFDF /* LTInputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTInputBar.m; sourceTree = "<group>"; };
+		59B8060D1C8EE3CC0090BFDF /* LTMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTMessageViewController.h; sourceTree = "<group>"; };
+		59B8060E1C8EE3CC0090BFDF /* LTMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTMessageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +110,7 @@
 		59897E741BE705C600BAAFB0 = {
 			isa = PBXGroup;
 			children = (
-				59897E7F1BE705C600BAAFB0 /* IMComponent */,
-				59A92B7F1C218999000B08C9 /* Demo */,
+				59B805F41C8EDE4D0090BFDF /* IMComponent */,
 				59897E991BE705C600BAAFB0 /* IMComponentTests */,
 				59897EA41BE705C600BAAFB0 /* IMComponentUITests */,
 				59897E7E1BE705C600BAAFB0 /* Products */,
@@ -136,19 +127,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		59897E7F1BE705C600BAAFB0 /* IMComponent */ = {
-			isa = PBXGroup;
-			children = (
-				59A92B9F1C22AE59000B08C9 /* Catactory */,
-				59A92B9E1C22AE4A000B08C9 /* Control */,
-				59A92B9D1C22AE3D000B08C9 /* Macro */,
-			);
-			path = IMComponent;
-			sourceTree = "<group>";
-		};
 		59897E801BE705C600BAAFB0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				59B805F51C8EDF310090BFDF /* PrefixHeader.pch */,
+				59897E831BE705C600BAAFB0 /* AppDelegate.h */,
+				59897E841BE705C600BAAFB0 /* AppDelegate.m */,
+				59897E911BE705C600BAAFB0 /* Info.plist */,
+				59897E8E1BE705C600BAAFB0 /* LaunchScreen.storyboard */,
 				59897E811BE705C600BAAFB0 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -173,73 +159,66 @@
 			path = IMComponentUITests;
 			sourceTree = "<group>";
 		};
-		59A92B7F1C218999000B08C9 /* Demo */ = {
+		59B805F01C8EDD4A0090BFDF /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				59A92BA31C22CE96000B08C9 /* Chat */,
-				59897E831BE705C600BAAFB0 /* AppDelegate.h */,
-				59897E841BE705C600BAAFB0 /* AppDelegate.m */,
-				59897E801BE705C600BAAFB0 /* Supporting Files */,
-				5991EF5C1BF20B3C00D206CE /* ActionBoard.h */,
-				5991EF5D1BF20B3C00D206CE /* ActionBoard.m */,
-				59897E8C1BE705C600BAAFB0 /* Assets.xcassets */,
-				59897E8E1BE705C600BAAFB0 /* LaunchScreen.storyboard */,
-				59897E911BE705C600BAAFB0 /* Info.plist */,
-				5991EF5F1BF20CEF00D206CE /* ActionBoard.xib */,
-				59897E861BE705C600BAAFB0 /* ViewController.h */,
-				59897E871BE705C600BAAFB0 /* ViewController.m */,
+				59B805F61C8EDF420090BFDF /* MacroDefine.h */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		59B805F11C8EDD550090BFDF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				59B805F71C8EDFB30090BFDF /* ActionBarViewController.h */,
+				59B805F81C8EDFB30090BFDF /* ActionBarViewController.m */,
+				59B805F91C8EDFB30090BFDF /* IM.storyboard */,
+				59B805FA1C8EDFB30090BFDF /* IMViewController.h */,
+				59B805FB1C8EDFB30090BFDF /* IMViewController.m */,
+				59B805FC1C8EDFB30090BFDF /* LTMainTableViewController.h */,
+				59B805FD1C8EDFB30090BFDF /* LTMainTableViewController.m */,
+				59B805FE1C8EDFB30090BFDF /* MessageCell.h */,
+				59B805FF1C8EDFB30090BFDF /* MessageCell.m */,
+				59B806001C8EDFB30090BFDF /* MessageCell.xib */,
+				59B806011C8EDFB30090BFDF /* ViewController.h */,
+				59B806021C8EDFB30090BFDF /* ViewController.m */,
 				59897E891BE705C600BAAFB0 /* Main.storyboard */,
-				59A92B801C2189CA000B08C9 /* IM.storyboard */,
-				59A92B811C2189CA000B08C9 /* Images.xcassets */,
-				59A92B821C2189CA000B08C9 /* IMInputBar.h */,
-				59A92B831C2189CA000B08C9 /* IMInputBar.m */,
+				59B8060A1C8EE23A0090BFDF /* LTInputBar.h */,
+				59B8060B1C8EE23A0090BFDF /* LTInputBar.m */,
+				59B8060D1C8EE3CC0090BFDF /* LTMessageViewController.h */,
+				59B8060E1C8EE3CC0090BFDF /* LTMessageViewController.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		59B805F21C8EDD870090BFDF /* ThirdLibrary */ = {
+			isa = PBXGroup;
+			children = (
 				59A92B8C1C2189CA000B08C9 /* UITableView+FDTemplateLayoutCell.h */,
 				59A92B8D1C2189CA000B08C9 /* UITableView+FDTemplateLayoutCell.m */,
-				59A92B981C22A558000B08C9 /* LTMainTableViewController.h */,
-				59A92B991C22A558000B08C9 /* LTMainTableViewController.m */,
-				59A92B9C1C22AAFC000B08C9 /* PrefixHeader.pch */,
-				59A92BA41C22D2C3000B08C9 /* LTControlViewController.h */,
-				59A92BA51C22D2C3000B08C9 /* LTControlViewController.m */,
 			);
-			name = Demo;
+			name = ThirdLibrary;
 			sourceTree = "<group>";
 		};
-		59A92B9D1C22AE3D000B08C9 /* Macro */ = {
+		59B805F31C8EDDA20090BFDF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				59A92B9B1C22A98E000B08C9 /* MacroDefine.h */,
+				59A92B811C2189CA000B08C9 /* Images.xcassets */,
+				59897E8C1BE705C600BAAFB0 /* Assets.xcassets */,
 			);
-			name = Macro;
+			name = Resource;
 			sourceTree = "<group>";
 		};
-		59A92B9E1C22AE4A000B08C9 /* Control */ = {
+		59B805F41C8EDE4D0090BFDF /* IMComponent */ = {
 			isa = PBXGroup;
 			children = (
-				59A92BA01C22AE8C000B08C9 /* LTSegmentedControl.h */,
-				59A92BA11C22AE8C000B08C9 /* LTSegmentedControl.m */,
+				59B805F11C8EDD550090BFDF /* App */,
+				59B805F31C8EDDA20090BFDF /* Resource */,
+				59B805F21C8EDD870090BFDF /* ThirdLibrary */,
+				59B805F01C8EDD4A0090BFDF /* Support */,
+				59897E801BE705C600BAAFB0 /* Supporting Files */,
 			);
-			name = Control;
-			sourceTree = "<group>";
-		};
-		59A92B9F1C22AE59000B08C9 /* Catactory */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Catactory;
-			sourceTree = "<group>";
-		};
-		59A92BA31C22CE96000B08C9 /* Chat */ = {
-			isa = PBXGroup;
-			children = (
-				59A92B861C2189CA000B08C9 /* IMViewController.h */,
-				59A92B871C2189CA000B08C9 /* IMViewController.m */,
-				59A92B881C2189CA000B08C9 /* MessageCell.h */,
-				59A92B891C2189CA000B08C9 /* MessageCell.m */,
-				59A92B8A1C2189CA000B08C9 /* MessageCell.xib */,
-				595397011C27D70B002FCF8B /* ActionBarViewController.h */,
-				595397021C27D70B002FCF8B /* ActionBarViewController.m */,
-			);
-			name = Chat;
+			name = IMComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,13 +324,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59A92B8E1C2189CA000B08C9 /* IM.storyboard in Resources */,
 				59897E901BE705C600BAAFB0 /* LaunchScreen.storyboard in Resources */,
 				59897E8D1BE705C600BAAFB0 /* Assets.xcassets in Resources */,
 				59A92B8F1C2189CA000B08C9 /* Images.xcassets in Resources */,
-				5991EF601BF20CEF00D206CE /* ActionBoard.xib in Resources */,
-				59A92B941C2189CA000B08C9 /* MessageCell.xib in Resources */,
+				59B806081C8EDFB30090BFDF /* MessageCell.xib in Resources */,
 				59897E8B1BE705C600BAAFB0 /* Main.storyboard in Resources */,
+				59B806041C8EDFB30090BFDF /* IM.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,18 +354,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59A92B9A1C22A558000B08C9 /* LTMainTableViewController.m in Sources */,
-				59897E881BE705C600BAAFB0 /* ViewController.m in Sources */,
+				59B806031C8EDFB30090BFDF /* ActionBarViewController.m in Sources */,
 				59897E851BE705C600BAAFB0 /* AppDelegate.m in Sources */,
-				59A92B921C2189CA000B08C9 /* IMViewController.m in Sources */,
-				59A92B901C2189CA000B08C9 /* IMInputBar.m in Sources */,
-				59A92B931C2189CA000B08C9 /* MessageCell.m in Sources */,
-				595397031C27D70B002FCF8B /* ActionBarViewController.m in Sources */,
+				59B806091C8EDFB30090BFDF /* ViewController.m in Sources */,
 				59897E821BE705C600BAAFB0 /* main.m in Sources */,
-				59A92BA61C22D2C3000B08C9 /* LTControlViewController.m in Sources */,
-				59A92BA21C22AE8C000B08C9 /* LTSegmentedControl.m in Sources */,
-				5991EF5E1BF20B3C00D206CE /* ActionBoard.m in Sources */,
+				59B8060F1C8EE3CC0090BFDF /* LTMessageViewController.m in Sources */,
+				59B806051C8EDFB30090BFDF /* IMViewController.m in Sources */,
+				59B806071C8EDFB30090BFDF /* MessageCell.m in Sources */,
 				59A92B961C2189CA000B08C9 /* UITableView+FDTemplateLayoutCell.m in Sources */,
+				59B8060C1C8EE23A0090BFDF /* LTInputBar.m in Sources */,
+				59B806061C8EDFB30090BFDF /* LTMainTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +414,6 @@
 				59897E8F1BE705C600BAAFB0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = IMComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -530,7 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/IMComponent/PrefixHeader.pch";
 				INFOPLIST_FILE = IMComponent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -546,7 +521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/IMComponent/PrefixHeader.pch";
 				INFOPLIST_FILE = IMComponent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
