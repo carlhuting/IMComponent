@@ -19,7 +19,7 @@
 @interface LTMessageViewController () <LTInputBarDelegate>
 @property (nonatomic, strong) LTInputBar *inputView;
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UIView *actionsView;
+@property (nonatomic, strong) UIView *additionView;
 @end
 
 @implementation LTMessageViewController
@@ -37,14 +37,14 @@
     return self;
 }
 
-- (UIView *)actionsView {
-    if (!_actionsView) {
-        _actionsView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.view.bounds), CGRectGetWidth(self.view.bounds), 270)];
-        _actionsView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        _actionsView.backgroundColor = [UIColor colorWithWhite:0.6 alpha:0.5];
-        [self.view addSubview:_actionsView];
+- (UIView *)additionView {
+    if (!_additionView) {
+        _additionView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.view.bounds), CGRectGetWidth(self.view.bounds), 270)];
+        _additionView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        _additionView.backgroundColor = [UIColor colorWithWhite:0.5 alpha:1];
+        [self.view addSubview:_additionView];
     }
-    return  _actionsView;
+    return  _additionView;
 }
 
 - (void)setUp {
@@ -104,40 +104,54 @@
     return YES;
 }
 
-- (void)requestAdditionView:(NSInteger)state {
+- (void)requestAdditionView:(LTInputBarState)state {
     FLOG
-    BOOL hide = state == -1;
-   __block CGRect inputViewFrame = _inputView.frame;
-   __block CGRect otherMenuViewFrame;
-    otherMenuViewFrame = self.actionsView.frame;
-    otherMenuViewFrame.origin.y = (hide ? CGRectGetHeight(self.view.frame) : (CGRectGetHeight(self.view.frame) - CGRectGetHeight(otherMenuViewFrame)));
-    self.actionsView.frame = otherMenuViewFrame;
-    
-    void (^InputViewAnimation)(BOOL hide) = ^(BOOL hide) {
-        inputViewFrame.origin.y = (hide ? (CGRectGetHeight(self.view.bounds) - CGRectGetHeight(inputViewFrame)) : (CGRectGetMinY(otherMenuViewFrame) - CGRectGetHeight(inputViewFrame)));
-        self.inputView.frame = inputViewFrame;
+    void (^InputViewAnimation)(UIView *floatView, UIView *anchorView) = ^(UIView *floatView, UIView *anchorView) {
+        CGRect frame = floatView.frame;
+        frame.origin.y = (CGRectGetMinY(anchorView.frame) - CGRectGetHeight(frame));
+        [UIView animateWithDuration:0.3 delay:0 options:7 << 16 animations:^{
+            floatView.frame = frame;
+        } completion:^(BOOL finished) {
+            
+        }];
     };
     
-    
-    void (^ShareMenuViewAnimation)(BOOL hide) = ^(BOOL hide) {
-        otherMenuViewFrame = self.actionsView.frame;
-        otherMenuViewFrame.origin.y = (hide ? CGRectGetHeight(self.view.frame) : (CGRectGetHeight(self.view.frame) - CGRectGetHeight(otherMenuViewFrame)));
-        self.actionsView.alpha = !hide;
-        self.actionsView.frame = otherMenuViewFrame;
+    void (^ShareMenuViewAnimation)(UIView *additionView, BOOL hide) = ^(UIView *additionView, BOOL hide) {
+        CGRect frame = additionView.frame;
+        frame.origin.y = (hide ? CGRectGetHeight(self.view.bounds) : (CGRectGetHeight(self.view.bounds) - CGRectGetHeight(frame)));
+        [UIView animateWithDuration:0.3 delay:0 options:7 << 16 animations:^{
+            additionView.frame = frame;
+
+        } completion:^(BOOL finished) {
+            
+        }];
     };
-    
-    ShareMenuViewAnimation(hide);
-    InputViewAnimation(hide);
-    UIEdgeInsets edgeInset = _tableView.contentInset;
-    edgeInset.bottom = CGRectGetHeight(self.view.bounds) - CGRectGetMinY(self.inputView.frame);
-    [self adjustEdgeInset:edgeInset];
+    if (state == LTInputBarStateText) {
+        ShareMenuViewAnimation(self.additionView, YES);
+    } else if(state == LTInputBarStateAdditional) {
+        ShareMenuViewAnimation(self.additionView, NO);
+        InputViewAnimation(self.inputView, self.additionView);
+        UIEdgeInsets edgeInset = _tableView.contentInset;
+        edgeInset.bottom = CGRectGetHeight(self.view.bounds) - CGRectGetMinY(self.inputView.frame);
+        [self adjustEdgeInset:edgeInset];
+    } else {
+        ShareMenuViewAnimation(self.additionView, YES);
+        InputViewAnimation(self.inputView, self.additionView);
+        UIEdgeInsets edgeInset = _tableView.contentInset;
+        edgeInset.bottom = CGRectGetHeight(self.view.bounds) - CGRectGetMinY(self.inputView.frame);
+        [self adjustEdgeInset:edgeInset];
+    }
 }
 
 - (void)adjustEdgeInset:(UIEdgeInsets)edgeInset {
     FLOG
     NSLog(@"UIEdgeInset<%f,%f,%f,%f>", edgeInset.top,edgeInset.left,edgeInset.bottom,edgeInset.right);
-    _tableView.contentInset =  edgeInset;
-    _tableView.scrollIndicatorInsets = edgeInset;
+    [UIView animateWithDuration:0.3 delay:0 options:7 <<16  animations:^{
+        _tableView.contentInset =  edgeInset;
+        _tableView.scrollIndicatorInsets = edgeInset;
+    } completion:^(BOOL finished) {
+        
+    }];
     NSInteger row = [_tableView numberOfRowsInSection:0];
     if (row > 0) {
         [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:row -1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
@@ -162,7 +176,12 @@
     CGRect frame = [userinfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     CGRect originalframe = self.inputView.frame;
     CGFloat y = CGRectGetMinY(frame) - CGRectGetHeight(originalframe);
-    self.inputView.frame = CGRectMake(0,y, CGRectGetWidth(self.view.bounds), CGRectGetHeight(originalframe));
+    [UIView animateWithDuration:0.3 delay:0 options:7 <<16  animations:^{
+        self.inputView.frame = CGRectMake(0,y, CGRectGetWidth(self.view.bounds), CGRectGetHeight(originalframe));
+    } completion:^(BOOL finished) {
+        
+    }];
+    
     UIEdgeInsets edgeInset = UIEdgeInsetsMake(self.topLayoutGuide.length, 0, CGRectGetHeight(originalframe) + frame.size.height , 0);
     [self adjustEdgeInset:edgeInset];
 }
@@ -171,7 +190,11 @@
     FLOG
     CGRect originalframe = self.inputView.frame;
     originalframe.origin.y = CGRectGetMaxY(self.view.bounds) - originalframe.size.height;
-    self.inputView.frame = originalframe;
+    [UIView animateWithDuration:0.3 delay:0 options:7 << 16 animations:^{
+        self.inputView.frame = originalframe;
+    } completion:^(BOOL finished) {
+        
+    }];
     UIEdgeInsets edgeInset = UIEdgeInsetsMake(self.topLayoutGuide.length, 0, CGRectGetHeight(self.view.bounds) - CGRectGetMinY(originalframe) , 0);
     [self adjustEdgeInset:edgeInset];
 }

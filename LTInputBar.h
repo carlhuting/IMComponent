@@ -20,10 +20,10 @@ typedef NS_ENUM(NSUInteger, LTInputBarState) {
 @protocol LTInputBarDelegate <NSObject>
 @optional
 - (void)sendMessage:(id)messag;
-- (BOOL)requestChangeHieht:(CGFloat)height;
+- (BOOL)requestChangeHieht:(CGFloat) height;
 - (void)willDismissInputView;
 - (void)willShowInputView;
-- (void)requestAdditionView:(NSInteger)index;
+- (void)requestAdditionView:(LTInputBarState)index;
 
 @end
 

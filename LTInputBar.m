@@ -13,7 +13,7 @@ const CGFloat buttonWidth = 35.0f;
 const CGFloat minLine = 1.0f;
 const CGFloat maxLine = 4.0f;
 
-@interface LTInputBar ()
+@interface LTInputBar () <UITextViewDelegate>
 @property (nonatomic, strong) UIButton *btn1;
 @property (nonatomic, strong) UITextView *textView;
 @property (nonatomic, strong) UIButton *btn2;
@@ -44,7 +44,7 @@ const CGFloat maxLine = 4.0f;
 
 - (void)setUp {
     _btn1 = [UIButton new];
-    _inputBarState = LTInputBarStateText;
+    _inputBarState = LTInputBarStateNormal;
     [_btn1 setImage:[UIImage imageNamed:@"ToolViewKeyboard"] forState:UIControlStateNormal];
     [_btn1 setImage:[UIImage imageNamed:@"ToolViewInputVoice"] forState:UIControlStateSelected];
     [_btn1 addTarget:self action:@selector(switchtapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -60,6 +60,7 @@ const CGFloat maxLine = 4.0f;
     [self addSubview:_recordButton];
     
     _textView = [[UITextView alloc] init];
+    _textView.delegate = self;
     _textView.font = [UIFont systemFontOfSize:15.0f];
     [_textView addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
     [self addSubview:_textView];
@@ -69,10 +70,9 @@ const CGFloat maxLine = 4.0f;
     if ([keyPath isEqualToString: @"contentSize"]) {
         CGSize size = [change[@"new"] CGSizeValue];
          NSLog(@"befor textview change to new %@ size ", NSStringFromCGSize(size));
-        if (size.height > maxLine * self.textView.font.lineHeight) {
-            return ;
-        }
-        CGFloat newheight = MAX(size.height + margin * 2, defaultBarheight);
+        CGFloat height = MIN(size.height, maxLine * self.textView.font.lineHeight);
+        CGFloat newheight = MAX(height + margin * 2, defaultBarheight);
+        
         BOOL result = [self.delegate requestChangeHieht:newheight];
         if (result) {
             [self adjustHeight:newheight];
@@ -82,7 +82,7 @@ const CGFloat maxLine = 4.0f;
 
 - (void)setInputBarState:(LTInputBarState)inputBarState {
     if (_inputBarState == LTInputBarStateAdditional) {
-        [self.delegate requestAdditionView:-1];
+        [self.delegate requestAdditionView:inputBarState];
     }
     _inputBarState = inputBarState;
 }
@@ -100,8 +100,8 @@ const CGFloat maxLine = 4.0f;
             
         }];
     } else {
+        self.inputBarState = LTInputBarStateText;
         [self.textView becomeFirstResponder];
-         self.inputBarState = LTInputBarStateText;
         CGSize size = _textView.contentSize;
         CGFloat height = MIN(size.height, maxLine * self.textView.font.lineHeight) + 2 * margin;
         height = MAX(height, defaultBarheight);
@@ -122,13 +122,12 @@ const CGFloat maxLine = 4.0f;
 
 - (void)tapped:(UIButton *)sender {
     if (self.inputBarState == LTInputBarStateAdditional) {
-        self.inputBarState = LTInputBarStateText;
-        [self.delegate requestAdditionView: -1];
-        [self.textView becomeFirstResponder];
+        self.inputBarState = LTInputBarStateNormal;  //?
+        [self.delegate requestAdditionView:LTInputBarStateNormal];
     } else {
         self.inputBarState = LTInputBarStateAdditional;
         [self endEditing:YES];
-        [self.delegate requestAdditionView:0];
+        [self.delegate requestAdditionView:LTInputBarStateAdditional];
     }
 }
 
@@ -143,8 +142,13 @@ const CGFloat maxLine = 4.0f;
     self.btn2.frame = CGRectMake(width - buttonWidth -margin, margin, buttonWidth, height - 2 * margin);
 }
 
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    self.inputBarState = LTInputBarStateText;
+}
+
 - (void)dealloc {
     [_textView removeObserver:self forKeyPath:@"contentSize" context:NULL];
+    _textView.delegate = nil;
 }
 
 @end
